@@ -4,3 +4,8 @@
           <Link href="/login">
             <a className="font-medium text-inherit">Log In</a>
           </Link>
+
+
+<p className="flex justify-center gap-4">
+<button className="font-medium hover:text-[#535bf2] cursor-pointer">click me</button>  
+                    
