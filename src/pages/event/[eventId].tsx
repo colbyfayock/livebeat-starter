@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout';
 import Container from '@/components/Container';
+// import Button from '@/components/Button';
 
 import events from '@/data/events.json';
 
@@ -9,6 +10,10 @@ function Event() {
     url: events[0].imageUrl,
     alt: ''
   };
+
+  // async function handleOnDelete(event: { preventDefault: () => void }) {
+  //   event.preventDefault();
+  // }
 
   return (
     <Layout>
@@ -37,6 +42,9 @@ function Event() {
               <p className="text-lg font-medium text-neutral-600 dark:text-neutral-200">
                 <strong>Location:</strong> { event?.location }
               </p>
+              {/* <p className="mt-6">
+                <Button color="red" onClick={handleOnDelete}>Delete Event</Button>
+              </p> */}
             </>
           )}
         </div>

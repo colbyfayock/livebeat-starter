@@ -43,17 +43,17 @@ function EventNew() {
         <form className="border border-slate-200 dark:border-slate-500 rounded p-6" onSubmit={handleOnSubmit}>
           <FormRow className="mb-5">
             <FormLabel htmlFor="name">Event Name</FormLabel>
-            <InputText id="name" name="name" type="text" />
+            <InputText id="name" name="name" type="text" required />
           </FormRow>
 
           <FormRow className="mb-5">
             <FormLabel htmlFor="date">Event Date</FormLabel>
-            <InputDate id="date" name="date" type="datetime-local" />
+            <InputDate id="date" name="date" type="datetime-local" required />
           </FormRow>
           
           <FormRow className="mb-5">
             <FormLabel htmlFor="location">Event Location</FormLabel>
-            <InputText id="location" name="location" type="text" />
+            <InputText id="location" name="location" type="text" required />
           </FormRow>
 
           <FormRow className="mb-6">

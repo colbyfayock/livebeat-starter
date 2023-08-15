@@ -3,9 +3,10 @@ interface InputFileProps {
   id?: string;
   name: string;
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
+  required?: boolean;
 }
 
-const InputFile = ({ id, className = '', name, onChange }: InputFileProps) => {
+const InputFile = ({ id, className = '', name, onChange, required }: InputFileProps) => {
   return (
     <input
       id={id}
@@ -13,6 +14,7 @@ const InputFile = ({ id, className = '', name, onChange }: InputFileProps) => {
       type="file"
       name={name}
       onChange={onChange}
+      required={required}
     />
   );
 }
