@@ -11,10 +11,6 @@ function Event() {
     alt: ''
   };
 
-  // async function handleOnDelete(event: { preventDefault: () => void }) {
-  //   event.preventDefault();
-  // }
-
   return (
     <Layout>
       <Container className="grid gap-12 grid-cols-1 md:grid-cols-2">
@@ -43,7 +39,7 @@ function Event() {
                 <strong>Location:</strong> { event?.location }
               </p>
               {/* <p className="mt-6">
-                <Button color="red" onClick={handleOnDelete}>Delete Event</Button>
+                <Button color="red">Delete Event</Button>
               </p> */}
             </>
           )}
